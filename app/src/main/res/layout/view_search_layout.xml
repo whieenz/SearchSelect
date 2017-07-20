@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/search_layout_bg">
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imb_search_search"
+                android:layout_marginLeft="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/im_search_gray"
+                android:background="#F0F0F0"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/et_search_text"
+                android:layout_weight="1"
+                android:lines="1"
+                android:textSize="14sp"
+                android:background="@null"
+                android:hint="请输入搜索内容"/>
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="12.5dp"
+                android:id="@+id/imb_search_clear"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/im_x"
+                android:visibility="gone"
+                android:scaleType="centerInside"
+                android:background="#F0F0F0" />
+        </LinearLayout>
+
+</LinearLayout>
