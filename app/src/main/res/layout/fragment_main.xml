@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
-    tools:context="com.whieenz.searchselect.MainActivity">
+    android:padding="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,23 +28,23 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_open_search_dialog"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/btn_bg"
         android:gravity="center"
-        android:onClick="doSelect"
         android:text="@string/string_open_select_dialog"
         android:textColor="#ffffff"
         android:textSize="20sp" />
 
     <Button
+        android:id="@+id/btn_open_fuzz_match"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/btn_bg"
         android:gravity="center"
-        android:onClick="openFuzzMatch"
         android:text="@string/string_key_fuzz_match"
         android:textColor="#ffffff"
         android:textSize="20sp" />

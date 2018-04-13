@@ -71,7 +71,7 @@ public class SerachSelectDialog extends Dialog {
 
         ListView listView;
         //SearchView searchView ;
-        DialogSearchView searchView;
+        SearchView searchView;
         ImageButton searchBtn;
         ImageButton closeBtn;
         TextView titleView;
@@ -85,7 +85,7 @@ public class SerachSelectDialog extends Dialog {
             layout = inflater.inflate(R.layout.dialog_select_search, null);
             listView = (ListView)layout.findViewById(R.id.listview);
             //searchView = (SearchView) layout.findViewById(R.id.searchView);
-            searchView = (DialogSearchView) layout.findViewById(R.id.searchView);
+            searchView = (SearchView) layout.findViewById(R.id.searchView);
             searchBtn = (ImageButton) layout.findViewById(R.id.btn_dialog_select_search);
             closeBtn = (ImageButton) layout.findViewById(R.id.imb_dialog_select_close);
             titleView = (TextView) layout.findViewById(R.id.tv_dialog_select_title);
@@ -138,7 +138,7 @@ public class SerachSelectDialog extends Dialog {
                     }
                 }
             });
-            searchView.setDialogSearchViewListener(new DialogSearchView.DialogSearchViewListener() {
+            searchView.setSearchViewListener(new SearchView.onSearchViewListener() {
 
                 @Override
                 public boolean onQueryTextChange(String text) {

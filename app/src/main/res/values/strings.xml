@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SearchSelect</string>
+    <string name="string_open_select_dialog">打开选择器</string>
+    <string name="string_key_fuzz_match">模糊匹配</string>
+    <string name="string_select_result">选择结果：</string>
+    <string name="string_key_name">姓名</string>
+    <string name="string_key_sex">性别</string>
+    <string name="string_key_age">年龄</string>
+    <string name="string_fuzz_match_demo">模糊匹配示例</string>
 </resources>

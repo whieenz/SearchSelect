@@ -13,9 +13,10 @@ import android.widget.LinearLayout;
 
 /**
  * Created by whieenz on 2017/7/19.
+ *
  */
 
-public class DialogSearchView extends LinearLayout implements View.OnClickListener {
+public class SearchView extends LinearLayout implements View.OnClickListener {
 
     /**
      * 输入框 
@@ -35,18 +36,18 @@ public class DialogSearchView extends LinearLayout implements View.OnClickListen
     /**
      * 搜索回调接口 
      */
-    private DialogSearchViewListener mListener;
+    private onSearchViewListener mListener;
 
     /**
      * 设置搜索回调接口 
      *
      * @param listener 监听者 
      */
-    public void setDialogSearchViewListener(DialogSearchViewListener listener) {
+    public void setSearchViewListener(onSearchViewListener listener) {
         mListener = listener;
     }
 
-    public DialogSearchView(Context context, AttributeSet attrs) {
+    public SearchView(Context context, AttributeSet attrs) {
         super(context, attrs);
         mContext = context;
         LayoutInflater.from(context).inflate(R.layout.view_search_layout, this);
@@ -67,7 +68,6 @@ public class DialogSearchView extends LinearLayout implements View.OnClickListen
         public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
 
         }
-
         @Override
         public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
             if (!"".equals(charSequence.toString())) {
@@ -101,7 +101,7 @@ public class DialogSearchView extends LinearLayout implements View.OnClickListen
     /**
      * search view回调方法 
      */
-    public interface DialogSearchViewListener {
+    public interface onSearchViewListener {
         boolean onQueryTextChange(String text);
     }
 }  

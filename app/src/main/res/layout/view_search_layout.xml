@@ -20,8 +20,7 @@
                 android:layout_marginLeft="15dp"
                 android:scaleType="centerInside"
                 android:src="@drawable/im_search_gray"
-                android:background="#F0F0F0"
-                />
+                android:background="#F0F0F0" />
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

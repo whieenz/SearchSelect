@@ -3,6 +3,16 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorTheme">#108EE9</color>
+    <color name="colorTitleBlue">#0055FF</color>
+    <color name="colorTitleRed">#F04848</color>
+    <color name="colorThemeBackground">#F2F2F2</color>
+    <color name="colorCommonText">#666666</color>
+    <color name="colorTilteText">#333333</color>
+    <color name="colorBackText">#D5D5D5</color>
+    <color name="colorLittleText">#CCCCCC</color>
+    <color name="colorGreenText">#45B287</color>
+    <color name="colorRedText">#F04844</color>
+    <color name="white">#FFFFFF</color>
     <color name="transparent">#00000000</color>
-    <color name="themeColor">#0bb3d0</color>
 </resources>
