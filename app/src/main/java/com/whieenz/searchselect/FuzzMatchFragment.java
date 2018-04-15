@@ -33,7 +33,7 @@ public class FuzzMatchFragment extends Fragment implements View.OnClickListener 
 
     private FuzzMatchPersonAdapter adapter;
 
-    private PersonBean person;
+    private PersonBean person = null;
     private boolean isShowSearchListView;
 
     private List<PersonBean> personBeans;
@@ -92,13 +92,14 @@ public class FuzzMatchFragment extends Fragment implements View.OnClickListener 
                 LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(linearLayoutManager);
         //设置recycleView item之间的分割线
-        recyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(getActivity()).color(Color.parseColor("#f3f3f3")).size(1).build());
+        recyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(getActivity()).color(Color.parseColor("#f3f3f3")).size(3).build());
         recyclerView.setAdapter(adapter);
         adapter.setOnItemClickListener(new BaseRecyclerAdapter.OnItemClickListener() {
             @Override
             public void onClick(int position) {
                 person = adapter.getItemData(position);
                 updateView();
+                hideSearchViewResult();
             }
         });
     }
@@ -106,7 +107,7 @@ public class FuzzMatchFragment extends Fragment implements View.OnClickListener 
 
     private void updateView() {
         tvName.setText(person.getName());
-        tvAge.setText(person.getAge());
+        tvAge.setText(String.valueOf(person.getAge()));
         tvSex.setText(person.getSex());
     }
 
@@ -116,7 +117,7 @@ public class FuzzMatchFragment extends Fragment implements View.OnClickListener 
         adapter.addItems(personBeans);
     }
 
-    public void clickSearchEmptyView() {
+    public void hideSearchViewResult() {
         llSearchListView.setVisibility(View.GONE);
         isShowSearchListView = false;
     }
@@ -125,7 +126,7 @@ public class FuzzMatchFragment extends Fragment implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ll_search_list:
-                clickSearchEmptyView();
+                hideSearchViewResult();
                 break;
             default:
                 break;
@@ -139,7 +140,7 @@ public class FuzzMatchFragment extends Fragment implements View.OnClickListener 
         String[] sex = {"男", "女"};
 
         for (int i = 0; i < 100; i++) {
-            PersonBean personBean = new PersonBean(names[i % 3], sex[i % 2], i);
+            PersonBean personBean = new PersonBean(names[i % 3] + i, sex[i % 2], i);
             personBeans.add(personBean);
         }
     }

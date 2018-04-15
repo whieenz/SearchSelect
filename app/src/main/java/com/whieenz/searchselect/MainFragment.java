@@ -58,7 +58,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         Fragment fragment = new FuzzMatchFragment();
         getActivity().getSupportFragmentManager()
                 .beginTransaction()
-                .add(R.id.fragment, fragment, fragment.getClass().getSimpleName())
+                .replace(R.id.fragment, fragment, fragment.getClass().getSimpleName())
                 .addToBackStack(fragment.getClass().getSimpleName())
                 .commit();
     }

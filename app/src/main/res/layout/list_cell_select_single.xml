@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:paddingLeft="10dp"
-    android:paddingTop="15dp"
-    android:paddingBottom="15dp"
-    android:orientation="horizontal">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                tools:ignore="RtlSymmetry">
+
     <TextView
         android:id="@+id/tv_select_info"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="20sp"
         android:layout_centerInParent="true"
         android:gravity="center"
-        android:lines="1"/>
+        android:lines="1"
+        android:textSize="20sp"/>
 
 </RelativeLayout>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorThemeBackground"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorThemeBackground"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,14 +17,15 @@
             android:layout_centerInParent="true"
             android:text="@string/string_fuzz_match_demo"
             android:textColor="#000000"
-            android:textSize="15sp" />
+            android:textSize="16sp"/>
 
     </RelativeLayout>
 
     <com.whieenz.searchselect.SearchView
         android:id="@+id/sv_input"
         android:layout_width="match_parent"
-        android:layout_height="48dp" />
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -49,14 +50,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/string_key_name" />
+                    android:text="@string/string_key_name"/>
 
                 <TextView
                     android:id="@+id/tv_name"
                     style="@style/NormalTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2" />
+                    android:layout_weight="2"/>
             </LinearLayout>
 
             <LinearLayout
@@ -71,14 +72,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/string_key_sex" />
+                    android:text="@string/string_key_sex"/>
 
                 <TextView
                     android:id="@+id/tv_sex"
                     style="@style/NormalTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2" />
+                    android:layout_weight="2"/>
             </LinearLayout>
 
             <LinearLayout
@@ -93,14 +94,14 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/string_key_age" />
+                    android:text="@string/string_key_age"/>
 
                 <TextView
                     android:id="@+id/tv_age"
                     style="@style/NormalTextStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2" />
+                    android:layout_weight="2"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -115,14 +116,14 @@
                 android:id="@+id/rv_search"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorThemeBackground" />
+                android:background="@color/colorThemeBackground"/>
 
             <View
                 android:id="@+id/v_search_list_empty"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="#40000000" />
+                android:background="#40000000"/>
         </LinearLayout>
 
     </RelativeLayout>

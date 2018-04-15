@@ -16,14 +16,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/string_select_result"
-            android:textSize="20sp" />
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/tv_result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#ff5c5c"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -36,7 +36,7 @@
         android:gravity="center"
         android:text="@string/string_open_select_dialog"
         android:textColor="#ffffff"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/btn_open_fuzz_match"
@@ -47,5 +47,5 @@
         android:gravity="center"
         android:text="@string/string_key_fuzz_match"
         android:textColor="#ffffff"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 </LinearLayout>
