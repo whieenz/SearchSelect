@@ -1,7 +1,7 @@
 # SearchSelect
 # Android 自定义支持快速搜索筛选的选择控件
 > 项目中遇到选择控件选项过多，需要快速查找匹配的情况。
-> 做了简单的Demo，效果图如下：
+> 做了简单的Demo，效果图如下：      
 
 
 ![image](http://note.youdao.com/yws/public/resource/d71ebd842aa21ca05114db415b07c6ee/xmlnote/B301DB6395F04C3295FC79D508DD072B/119)
